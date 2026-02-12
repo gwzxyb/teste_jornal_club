@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Talk Show / Jogo – G-quadruplexos em Arqueias (Aktary et al., 2026)</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #111827;
+      color: #f9fafb;
+      padding: 18px 28px;
+    }
+    header h1 {
+      margin: 0 0 6px 0;
+      font-size: 1.5rem;
+    }
+    header p {
+      margin: 2px 0;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+    }
+    .intro, .bloco {
+      background: #ffffff;
+      border-radius: 6px;
+      padding: 16px 14px;
+      margin-bottom: 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 0;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: #374151;
+      background: #e5e7eb;
+      border-left: 4px solid #4b5563;
+      padding: 8px 10px;
+      margin: 12px 0 16px;
+    }
+    .pergunta {
+      margin: 10px 0;
+      padding: 8px 10px;
+      border-radius: 4px;
+      border: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+    .pergunta strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .resposta {
+      display: none;
+      margin-top: 6px;
+      padding: 6px 8px;
+      border-radius: 4px;
+      background: #f3f4f6;
+      font-size: 0.92rem;
+    }
+    button.toggle {
+      margin-top: 4px;
+      padding: 4px 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 1px solid #d1d5db;
+      background: #e5e7eb;
+    }
+    .nota {
+      font-size: 0.85rem;
+      color: #4b5563;
+      margin-top: 8px;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 16px 24px;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Talk Show / Jogo – G-quadruplexos em Arqueias</h1>
+  <p>Baseado em: Aktary et al., Nucleic Acids Research (2026), 54, gkag067.</p>
+  <p><a href="https://doi.org/10.1093/nar/gkag067" target="_blank" style="color:#93c5fd;">
+    DOI: 10.1093/nar/gkag067
+  </a></p>
+</header>
+
+<main>
+
+  <section class="intro">
+    <h2>Como usar esta página em aula</h2>
+    <div class="meta">
+      Formato pensado para seminário ou disciplina de pós-graduação: você projeta o artigo (principalmente as Figuras 1–5) e usa as perguntas abaixo como roteiro de talk show ou quiz em grupos. [file:27]
+    </div>
+    <p>
+      Sugestão: divida a turma em quatro “times” temáticos:
+    </p>
+    <ul>
+      <li>Time Bioinformática (predições G4Hunter e genoma).</li>
+      <li>Time Estruturas (validação biofísica in vitro).</li>
+      <li>Time Microscopia (SIM/STORM e BG4).</li>
+      <li>Time Helicases (mutantes e modulação de G4).</li>
+    </ul>
+    <p>
+      Cada bloco abaixo corresponde a um “quadro” do talk show. Clique em “Mostrar resposta” para discutir depois que os alunos responderem.
+    </p>
+  </section>
+
+  <!-- Bloco 1 -->
+  <section class="bloco">
+    <h2>Bloco 1 – Visão geral do artigo</h2>
+
+    <div class="pergunta">
+      <strong>Pergunta 1 – Qual a pergunta central do trabalho?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        Investigar se G-quadruplexos (G4) existem e são funcionalmente relevantes em arqueias, usando <em>Haloferax volcanii</em> e <em>Thermococcus barophilus</em> como modelos para conectar predição genômica, validação biofísica e visualização in vivo de G4 em DNA e RNA. [file:27]
+      </div>
+    </div>
+
+    <div class="pergunta">
+      <strong>Pergunta 2 – Por que arqueias são um bom modelo para estudar G4?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        Porque combinam maquinaria de replicação/transcrição mais próxima de eucariotos com características procarióticas e habitats extremos; isso permite testar se G4s são estruturas antigas e conservadas ao longo da evolução, além de explorar a estabilidade de G4 em condições extremas de sal e temperatura. [file:27]
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloco 2 -->
+  <section class="bloco">
+    <h2>Bloco 2 – Figura 1: GC, PQS e promotores</h2>
+    <p class="nota">
+      Projete a Figura 1 (GC%, número de PQS, frequência por replicon e enriquecimento de PQS em torno do TSS). [file:27]
+    </p>
+
+    <div class="pergunta">
+      <strong>Pergunta 3 – O que é um PQS e como o G4Hunter seleciona candidatos?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        PQS (potential quadruplex-forming sequence) é uma sequência com potencial de formar G4. O G4Hunter usa uma janela (25 nt) e atribui um score baseado em conteúdo de G e distribuição; scores ≥ 1,2 indicam alta probabilidade de formar G4 estável. [file:27]
+      </div>
+    </div>
+
+    <div class="pergunta">
+      <strong>Pergunta 4 – O que aprendemos sobre a distribuição de PQS no genoma de <em>H. volcanii</em>?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        Há mais de 5800 PQS no genoma, com frequência de ~1,55 PQS/kb no cromossomo, similar à do genoma humano. Replicons mais ricos em GC têm maior densidade de PQS, e há forte enriquecimento de PQS em promotores, com pico a ~–100 bp do TSS. [file:27]
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloco 3 -->
+  <section class="bloco">
+    <h2>Bloco 3 – Figura 2: validação in vitro dos G4</h2>
+    <p class="nota">
+      Projete a Figura 2 (FRET-MC, Thioflavin T, NMM). [file:27]
+    </p>
+
+    <div class="pergunta">
+      <strong>Pergunta 5 – O que é o S-factor no FRET-MC e o que um valor baixo indica?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        O S-factor resume quão bem uma sequência candidata compete com a sonda F21T pelo ligante PhenDC3. Valores mais baixos significam que a sequência forma G4 eficiente e sequestra o ligante, reduzindo a estabilização da sonda. [file:27]
+      </div>
+    </div>
+
+    <div class="pergunta">
+      <strong>Pergunta 6 – Por que o artigo usa múltiplas técnicas (FRET-MC, ThT, NMM, CD, IDS) em vez de apenas uma?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        Porque nenhuma técnica isolada é prova definitiva de G4. A combinação de FRET-MC, aumento de fluorescência em sondas “light-up”, espectros CD típicos de G4 e IDS com picos característicos oferece um corpo de evidências convergente de que as sequências realmente adotam conformação G4 in vitro. [file:27]
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloco 4 -->
+  <section class="bloco">
+    <h2>Bloco 4 – Figuras 3 e 4: G4 em DNA e RNA (SIM/STORM)</h2>
+    <p class="nota">
+      Projete as figuras com BG4 + YOYO-1 / Hoechst, antes e depois de RNase e DNase. [file:27]
+    </p>
+
+    <div class="pergunta">
+      <strong>Pergunta 7 – O que as imagens mostram sobre a presença de G4 em DNA e RNA?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        O tratamento com DNase remove a maior parte do sinal BG4, mostrando que muitos G4 estão em DNA. O tratamento com RNase reduz significativamente (~1,7 vez) a intensidade e o número de foci, mas não zera o sinal, indicando que há G4s tanto em DNA quanto rG4s em RNA nas células de arqueias. [file:27]
+      </div>
+    </div>
+
+    <div class="pergunta">
+      <strong>Pergunta 8 – Por que o sinal BG4 é maior na fase exponencial do que na estacionária?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        Na fase exponencial há maior atividade de replicação do DNA e possivelmente maior ploidia, aumentando oportunidades para formação de G4 e exposição de regiões ricas em guanina; isso se reflete em mais foci BG4 por célula. [file:27]
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloco 5 -->
+  <section class="bloco">
+    <h2>Bloco 5 – Figura 5: ligante PhenDC3 e mutantes de helicase</h2>
+    <p class="nota">
+      Projete a Figura 5 (DMSO vs PhenDC3; WT vs ∆hef, ∆dna2, ∆rad3a, ∆rad3b). [file:27]
+    </p>
+
+    <div class="pergunta">
+      <strong>Pergunta 9 – O que o tratamento com PhenDC3 revela sobre G4 em <em>H. volcanii</em>?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        PhenDC3 aumenta a intensidade total de fluorescência BG4 nas células, indicando que esse ligante estabiliza G4s in vivo, tornando-os mais abundantes ou mais duráveis; isso é consistente com seu uso anterior em ensaios in vitro. [file:27]
+      </div>
+    </div>
+
+    <div class="pergunta">
+      <strong>Pergunta 10 – O que o comportamento dos mutantes de helicase (∆hef, ∆dna2, ∆rad3b) sugere?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        Esses mutantes exibem aumento significativo do sinal BG4 em comparação ao tipo selvagem, sugerindo que Hef, Dna2 e Rad3b participam da resolução de G4s em arqueias. Rad3a, em contraste, não mostra o mesmo efeito, sugerindo funções distintas entre as helicases aparentadas. [file:27]
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloco 6 -->
+  <section class="bloco">
+    <h2>Bloco 6 – Síntese e conexão com outros sistemas</h2>
+
+    <div class="pergunta">
+      <strong>Pergunta 11 – Que evidência do artigo você considera mais convincente para afirmar que G4s são relevantes em arqueias?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        Uma resposta robusta combina: alta densidade de PQS no genoma, enriquecimento em promotores, demonstração in vitro de formação de G4, visualização in vivo em DNA e RNA com BG4 e microscopia de super-resolução, modulação por ligantes específicos e por helicases conservadas. [file:27]
+      </div>
+    </div>
+
+    <div class="pergunta">
+      <strong>Pergunta 12 – Que tipo de experimento você desenharia a partir deste artigo para estudar G4 em outro arqueano (por exemplo, <em>Halobacterium salinarum</em>)?</strong>
+      <button class="toggle">Mostrar resposta</button>
+      <div class="resposta">
+        Possibilidades incluem: rodar G4Hunter no genoma, mapear PQS em promotores, cruzar com dados de expressão, testar um subconjunto de sequências por FRET-MC e CD, e estabelecer protocolos de imunofluorescência com BG4 em condições de alta salinidade para visualizar G4 e correlacionar com R-loops ou non-B DNA previamente mapeados. [file:27]
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    Baseado em: Aktary Z. et al., “Archaeal G-quadruplexes: a novel model for understanding unusual DNA/RNA structures across the tree of life”, 
+    Nucleic Acids Research, 54, gkag067 (2026). [file:27]
+  </p>
+</footer>
+
+<script>
+  document.querySelectorAll('button.toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var resp = this.nextElementSibling;
+      if (!resp) return;
+      var visible = resp.style.display === 'block';
+      resp.style.display = visible ? 'none' : 'block';
+      this.textContent = visible ? 'Mostrar resposta' : 'Ocultar resposta';
+    });
+  });
+</script>
+
+</body>
+</html>
