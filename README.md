@@ -1,1 +1,1 @@
-https://github.com/gwzxyb/teste_jornal_club.git
+https://gwzxyb.github.io/teste_jornal_club/
